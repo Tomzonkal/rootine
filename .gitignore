@@ -1,2 +1,35 @@
+# Lokalna baza wiedzy projektu (specyfikacje, decyzje, lekcje, przebiegi) — nie trafia do repo.
+# `meta` (bez ukośnika) łapie symlink tworzony w worktree przez scripts/link-meta.sh.
 meta/
 meta
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Node
+node_modules/
+dist/
+*.tsbuildinfo
+playwright-report/
+test-results/
+
+# Środowisko i dane lokalne
+.env
+media/
+
+# Cezar: dane przebiegów lokalnie, konfiguracja i workflow w repo
+.ai/cezar/*
+!.ai/cezar/config.json
+!.ai/cezar/workflows/
+
+# System / edytory
+.DS_Store
+.idea/
+.vscode/
